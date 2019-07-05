@@ -8,6 +8,8 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		String ip = InetAddress.getLoopbackAddress().getHostAddress();
+		System.out.println(ip+" -----------------");
 	}
 
 }
